@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{subtitle}} | {{title}}</title>
+</head>
+<body>
+    <h1>Read our {{subtitle}}</h1>
+    <ul>
+        {% comment %} Disini cara pakai template tags {% endcomment %}
+        {% for link, name in nav %}
+        <li><a href="{{link}}">{{name}}</a></li>
+        {% endfor %}
+    </ul>
+    <h3>First article</h3>
+    <p>{% lorem 5 p random %}</p>
+</body>
+</html>
