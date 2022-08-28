@@ -6,6 +6,11 @@ def index(request):
     context = {
         "judul" : "Kelas Terbuka",
         "subjudul" : "Home",
-        "_" : "_",
+        "nav" : [
+            ["/", "Home"],
+            ["/about", "About"],
+            ["/blog", "Blog"],
+        ],
+        "banner" : "img/banner_home.png",
     }
     return render(request, "index.html", context)

@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{subjudul}} | {{judul}}</title>
+    <style>
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <img src="{% static banner %}" alt="banner_home.png">
+    <h1>{{judul}} {{subjudul}} pages</h1>
+    <ul>
+        {% for link,name in nav %}
+            <li>
+                <a href="{{link}}">{{name}}</a>
+            </li>
+        {% endfor %}
+    </ul>
+    <p>{% lorem 3 b random %}</p>
+</body>
+</html>
