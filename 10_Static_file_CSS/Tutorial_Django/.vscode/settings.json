@@ -1,0 +1,18 @@
+{
+    "code-runner.runInTerminal": true,
+    "editor.minimap.enabled": false,
+    // "python.defaultInterpreterPath": "C:\\Users\\lenovo\\AppData\\Local\\Programs\\Python\\Python310\\python",
+    "python.defaultInterpreterPath": "D:\\LATIHAN PEMROGRAMAN\\Env\\Scripts\\python",
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    // "workbench.colorTheme": "Default Dark+",
+    // "workbench.colorTheme": "Default Light+",
+    "workbench.colorTheme": "Noctis Minimus",
+    "workbench.iconTheme": "vscode-icons",
+    "[django-html]": {
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": true,
+            "strings": true
+        }
+    }
+}

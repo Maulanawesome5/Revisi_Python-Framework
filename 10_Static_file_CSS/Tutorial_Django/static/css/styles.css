@@ -1,0 +1,27 @@
+#banner {
+    width: 100%;
+}
+h1 {
+    color: #ff8558;
+    font-family: Arial;
+}
+nav ul {
+    background-color: #546274;
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+nav li {
+    float: left;
+}
+nav a {
+    color: white;
+    display: block;
+    font-family: Arial;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: #9fc2d4;
+}
