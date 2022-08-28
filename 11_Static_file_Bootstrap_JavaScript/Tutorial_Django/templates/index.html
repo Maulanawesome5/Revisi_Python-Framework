@@ -1,0 +1,128 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% comment %} <link rel="stylesheet", type="text/css" href="{% static 'css/styles.css' %}"> {% endcomment %}
+    <link rel="stylesheet", type="text/css" href="{% static 'vendor/bootstrap/bootstrap.css' %}">
+    <title>{{subjudul}} | {{judul}}</title>
+    <style>
+        /* 
+         * CSS global file saya matikan karena desain tampilan saat ini dibuat berbeda.
+         * Jadi saya masukan tag style didalam HTML ini.
+        */
+
+        .jumbotron {
+            background-image: url("/static/img/mainHeader.jpg");
+            background-position: center;
+            background-size: cover;
+            height: 500px;
+            padding-bottom: 10px;
+            padding-top: 100px;
+        }
+        #container-paragraph {
+            margin-top: 40px;
+        }
+        #sample-article {
+            {% comment %} background-color: #bcbc9c; {% endcomment %}
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            width: 70%;
+        }
+        #sample-article p {
+            {% comment %} background-color: coral; {% endcomment %}
+            margin-bottom: 5%;
+            margin-left: 2%;
+            margin-right: 2%;
+            text-align: justify;
+        }
+        #sample-article h4 {
+            {% comment %} background-color: firebrick; {% endcomment %}
+            margin-left: 2%;
+            margin-right: 2%;
+        }
+    </style>
+</head>
+<body>
+    {% comment %}
+    <img id="banner" src="{% static banner %}" alt="banner_home.png">
+    <nav>
+        <ul>
+            {% for link,name in nav %}
+            <li>
+                <a href="{{link}}">{{name}}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </nav>
+    {% endcomment %}
+
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark" id="myNav">
+        <a class="navbar-brand" href="#">
+            <img src="{% static 'img/logo.png' %}" alt="Kelas Terbuka" style="height:30px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                {% for link,name in nav %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{link}}">{{name}}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container text-white text-center">
+            <h1 class="display-4">Selamat Datang</h1>
+            <p class="lead">di {{judul}}</p>
+            <hr>
+        </div>
+    </div>
+
+    <div id="container-paragraph" class="container-fluid">
+        <div id="myBody" class="container bg-info text-dark shadow" style="margin-top: -100px;">
+            <div class="row" style="height: 400px;">
+                <article id="sample-article">
+                    <h4>{{judul}} {{subjudul}} pages</h4>
+                    <p>{% lorem 1 b random %}</p>
+                </article>
+            </div>
+        </div>
+        <div class="container bg-warning text-white shadow">
+            <div class="row" style="height: 400px;">
+                <article id="sample-article">
+                    <h4>{{judul}} {{subjudul}} pages</h4>
+                    <p>{% lorem 1 b random %}</p>
+                </article>
+            </div>
+        </div>
+        <div class="container bg-danger text-dark shadow">
+            <div class="row" style="height: 400px;">
+                <article id="sample-article">
+                    <h4>{{judul}} {{subjudul}} pages</h4>
+                    <p>{% lorem 1 b random %}</p>
+                </article>
+            </div>
+        </div>
+        <div class="container bg-dark text-white shadow">
+            <div class="row" style="height: 400px;">
+                <article id="sample-article">
+                    <h4>{{judul}} {{subjudul}} pages</h4>
+                    <p>{% lorem 1 b random %}</p>
+                </article>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="{% static 'vendor/bootstrap/bootstrap.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/scrolling.js' %}"></script>
+</body>
+</html>

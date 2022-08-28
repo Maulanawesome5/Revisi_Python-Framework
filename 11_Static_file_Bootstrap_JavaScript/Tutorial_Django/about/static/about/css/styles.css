@@ -1,0 +1,18 @@
+/* 
+ * Karena di dalam HTML sudah dikoneksi
+ * dengan CSS global, maka tidak perlu mengetik ulang
+ * seluruh sintaks CSS. Cukup ketik ulang untuk background-color
+ * supaya kontras dengan warna banner dari setiap apps.
+*/
+
+h1 {
+    color: #511b00;
+}
+
+nav ul {
+    background-color: #f7973e;
+}
+
+nav a:hover {
+    background-color: #b51c1c;
+}
