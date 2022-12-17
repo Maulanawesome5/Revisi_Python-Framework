@@ -1,0 +1,7 @@
+.jumbotron {
+    background-image: url("../img/banner_blog.png");
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+}

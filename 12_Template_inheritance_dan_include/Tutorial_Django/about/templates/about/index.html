@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block app_css %}
+<link rel="stylesheet" href="{% static 'about/css/styles.css' %}">
+{% endblock app_css %}
+
+{% block header %}
+<h1 class="display-4">{{halaman}}</h1>
+<p class="lead">Cari tahu yuk tentang {{judul}} !</p>
+{% endblock header %}
+
+{% block content-1 %}
+<div class="row" style="height: 400px;">
+    <h1>About {{judul}} 1</h1>
+    <p>{% lorem 1 b %}</p>
+</div>
+{% endblock content-1 %}
+
+{% block content-2 %}
+<div class="row" style="height: 400px;">
+    <h1>About {{judul}} 2</h1>
+    <p>{% lorem 1 b %}</p>
+</div>
+{% endblock content-2 %}
+
+{% block content-3 %}
+<div class="row" style="height: 400px;">
+    <h1>About {{judul}} 3</h1>
+    <p>{% lorem 1 b %}</p>
+</div>
+{% endblock content-3 %}

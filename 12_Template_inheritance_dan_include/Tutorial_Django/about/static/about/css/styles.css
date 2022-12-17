@@ -1,0 +1,15 @@
+.jumbotron {
+    background-image: url("../img/banner_about.png");
+    background-position: right;
+    background-size: cover;
+    height: 500px;
+}
+.display-4 {
+    font-family: Impact;
+    text-align: right;
+}
+.lead {
+    color: white;
+    font-family: Impact;
+    text-align: right;
+}
