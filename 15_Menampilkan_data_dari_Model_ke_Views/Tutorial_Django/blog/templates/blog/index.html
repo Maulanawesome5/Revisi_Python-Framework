@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Daftar postingan di {{halaman}} {{nama_website}}</h1>
+<!-- title dan body ini diambil dari variabel di file models.py -->
+<!-- Posts ini merupakan variabel di views.py yang di inherit dari class Post -->
+{% for post in Posts %}
+    <h3>{{post.title}}</h3>
+    <p>{{post.body}}</p>
+{% endfor %}
+{% endblock content %}
