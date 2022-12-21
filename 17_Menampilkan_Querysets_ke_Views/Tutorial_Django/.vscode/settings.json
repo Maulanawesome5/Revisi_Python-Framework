@@ -1,0 +1,7 @@
+{
+    "editor.minimap.autohide": true,
+    "python.defaultInterpreterPath": "D:/LATIHAN PEMROGRAMAN/Env/Scripts/python",
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "workbench.colorTheme": "Monokai",
+    "workbench.iconTheme": "vscode-icons",
+}
